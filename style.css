@@ -22,18 +22,22 @@ h1 {
   padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
 h1.block-header {
   text-align: center;
-
+  padding-top: 20px;
 }
 
 h1.block-header2 {
   text-align: center;
   padding-top: 50px;
+}
+
+h1.block-header3 {
+  padding-top: 80px;
 }
 
 h3 {
@@ -43,6 +47,7 @@ h3 {
 h3.block-header-discr {
   text-align: center;
   padding: 0;
+  font-weight: 100;
 }
 
 .color-marked-text {
@@ -202,13 +207,31 @@ span {
 .block9-outer {
   height: 480px;
   background-image: url('Images/slider-3_dg4a571.jpg');
+  background-position: 100% 50%;
+  text-align: end;
 }
 
-.block9-inner {}
+.block9-inner {
+  display: inline-block;
+  width: 580px;
+  text-align: start;
+}
+
+.block9-inner p.color-marked-text {
+  font-size: 24px;
+}
+
+.block9-inner ul {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 
 .block10-outer {
   height: 748px;
   background-color: rgb(255, 255, 255);
+  background-image: url('Images/8_tpeXANT.jpg');
 }
 
 .block10-inner {}
@@ -225,7 +248,11 @@ span {
   background-image: url('Images/slider-4_jxzVQgE.png');
 }
 
-.block12-inner {}
+.block12-inner {
+  display: inline-block;
+  width: 550px;
+  text-align: start;
+}
 
 .block13-outer {
   height: 800px;
@@ -281,7 +308,7 @@ span {
 
 .block16-inner {}
 
-.block16-inner .gallery-1 {
+.gallery-1 {
   display: inline-block;
   text-align: center;
   margin-left: 5px;
@@ -289,22 +316,22 @@ span {
   vertical-align: top;
 }
 
-.block16-inner .gallery-1:nth-of-type(1) {
+.gallery-1:nth-of-type(1) {
   margin-left: auto;
 }
 
-.block16-inner .gallery-1:last-of-type {
+.gallery-1:last-of-type {
   margin-right: auto;
 }
 
-.block16-inner .gallery-1 p {
+.gallery-1 p {
   font-size: 18px;
   color: rgb(122, 122, 122);
   overflow-wrap: normal;
 
 }
 
-.block16-inner .block16-gallery {
+.block16-gallery {
   text-align: center;
   width: 100%;
   margin-top: 60px;
