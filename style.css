@@ -204,6 +204,12 @@ span {
 
 .block8-inner {}
 
+.block8-inner>div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+
 .block9-outer {
   height: 480px;
   background-image: url('Images/slider-3_dg4a571.jpg');
@@ -235,6 +241,33 @@ span {
 }
 
 .block10-inner {}
+
+.block10-inner .block10-list {
+  display: inline-block;
+  width: 320px;
+  margin: 0;
+  margin-left: 150px;
+  margin-right: 40px;
+  margin-top: 30px;
+  /*border: red 1px dashed;*/
+  vertical-align: top;
+}
+
+.block10-inner .block10-list:last-of-type {
+  margin-right: 0;
+}
+
+
+
+.block10-list div {
+  font-size: 24px;
+  /*border: dashed 1px black;*/
+  height: 108px;
+  vertical-align: middle;
+  text-align: left;
+
+}
+
 
 .block11-outer {
   height: 540px;
