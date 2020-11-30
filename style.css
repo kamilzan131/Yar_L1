@@ -1,8 +1,9 @@
 body {
-  font-family: 'pt sans, Verdana, sans-serif';
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 100;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.5;
+  margin: 0;
 }
 
 main,
@@ -16,21 +17,75 @@ footer {
 
 h1 {
   font-size: 36px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h1.block-header {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
+
 }
 
-ol>li {
+h1.block-header2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
   font-size: 18px;
-  margin-bottom: 30px;
+}
+
+h3.block-header-discr {
+  text-align: center;
+  padding: 0;
+}
+
+.color-marked-text {
+  color: red;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
 }
 
 p {
   margin: 0;
+}
+
+span {
+  margin: 0;
+  font-size: 20px;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  background-color: red;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 40px;
+  border: none;
+  min-width: 210px;
+
+}
+
+.button-1 {
+  background-color: #00aeef;
 }
 
 .header {
@@ -82,7 +137,7 @@ p {
   margin-left: auto;
   background-repeat: no-repeat;
   position: relative;
-
+  border: 1px dashed rebeccapurple;
 }
 
 .block1-outer {
@@ -177,7 +232,16 @@ p {
   background-color: rgb(255, 255, 255);
 }
 
-.block13-inner {}
+.block13-inner {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.block13-inner .gallery-2 {
+  display: inline-block;
+
+  margin: 10px;
+}
 
 .block14-outer {
   height: 728px;
@@ -186,13 +250,29 @@ p {
 
 .block14-inner {}
 
+.block14-inner h1 {
+  padding-top: 20px;
+}
+
 .block15-outer {
   height: 450px;
   background-image: url('Images/slider-5.png');
   background-position: 100% 50%;
+  text-align: end;
 }
 
-.block15-inner {}
+.block15-inner {
+  display: inline-block;
+  width: 520px;
+  text-align: start;
+
+}
+
+.block15-inner ul {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
 .block16-outer {
   height: 584px;
@@ -201,9 +281,42 @@ p {
 
 .block16-inner {}
 
+.block16-inner .gallery-1 {
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.block16-inner .gallery-1:nth-of-type(1) {
+  margin-left: auto;
+}
+
+.block16-inner .gallery-1:last-of-type {
+  margin-right: auto;
+}
+
+.block16-inner .gallery-1 p {
+  font-size: 18px;
+  color: rgb(122, 122, 122);
+  overflow-wrap: normal;
+
+}
+
+.block16-inner .block16-gallery {
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
 .block17-outer {
   height: 835px;
   background-image: url('Images/slider-6_pWTAn6L.jpg');
+}
+
+.block17-outer li {
+  margin-bottom: 30px;
 }
 
 .block17-inner {}
