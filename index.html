@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Окна в квартиру и частный дом. Остекление балконов и лоджий. Гарантия на стеклопакеты 12 лет." />
+  <meta name="description" content="Окна в квартиру и частный дом. Остекление балконов и лоджий. Гарантия на стеклопакеты 12 лет." />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Пластиковые окна в Казани. Справедливая цена. Монтаж за 1 день.</title>
@@ -106,11 +107,37 @@
         </div>
       </div>
     </section>
-    <section class="outer-block block2-outer">
-      <div class="inner-block block2-inner">
-        <img src="Images/okno-1-1-2.jpg" alt="окно">
-      </div>
-    </section>
+
+      <section id="slider_bl" class="outer-block">
+        <div class="inner-block wrapper">
+          <input checked type=radio name="slider" id="slide1" />
+          <input type=radio name="slider" id="slide2" />
+          <input type=radio name="slider" id="slide3" />
+          <div class="slider-wrapper">
+            <div class=inner>
+              <article>
+                <img  src="Images/okno-1-1-2.jpg" />
+              </article>
+              <article>
+                <img src="Images/okno-1-2-2.jpg" />
+              </article>
+              <article>
+                <img src="Images/okno-1-3-2.jpg" />
+              </article>
+            </div>
+          </div>
+          <div class="slider-prev-next-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+          </div>
+          <div class="slider-dot-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+          </div>
+        </div>
+      </section>
     <section   class="outer-block block3-outer">
       <div class="inner-block block3-inner">
         <img src="Images/reb.png" alt="child">

@@ -5,10 +5,10 @@
   font-weight: 100;
   font-size: 14px;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 
-body {}
 
 main,
 footer {
@@ -355,7 +355,7 @@ h3.block-header-discr {
   margin-top: 8%;
 }
 
-.order-form-btn .button {}
+
 
 .order-form-discr {
   margin-left: 10%;
@@ -420,13 +420,14 @@ h3.block-header-discr {
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
-  /*outline: 1px dashed greenyellow;*/
+  outline: 2px dashed rgb(180, 5, 78);
+  border: 2px dashed gray;
 }
 
 /*block-1-----------------------------------------------*/
 
 
-.block1-outer {}
+
 
 .block1-inner {
   display: flex;
@@ -489,7 +490,7 @@ h3.block-header-discr {
 
 /*block2-----------------------------------------------------*/
 
-.block2-outer {}
+
 
 .block2-inner img {
   width: 100%;
@@ -498,7 +499,7 @@ h3.block-header-discr {
 
 /*block3-----------------------------------------------------*/
 
-.block3-outer {}
+
 
 .block3-inner {
   display: flex;
@@ -745,7 +746,7 @@ h3.block-header-discr {
 
 /*block7-----------------------------------------------------*/
 
-.block7-outer {}
+
 
 .block7-header {
   padding-top: 50px;
@@ -786,11 +787,11 @@ h3.block-header-discr {
 
 /*block8-----------------------------------------------------*/
 
-.block8-outer {}
 
-.block8-inner {}
 
-.block8-header {}
+
+
+
 
 .block8-item {
   margin-left: 2%;
@@ -911,9 +912,9 @@ h3.block-header-discr {
 }
 
 /*block10-----------------------------------------------------*/
-.block10-outer {}
 
-.block10-inner {}
+
+
 
 .block10-header {
   padding-top: 50px;
@@ -976,9 +977,7 @@ h3.block-header-discr {
 }
 
 /*block11-----------------------------------------------------*/
-.block11-outer {}
 
-.block11-inner {}
 
 .block11-header {
   margin-bottom: 50px;
@@ -1050,7 +1049,7 @@ h3.block-header-discr {
 
 
 /*block13-----------------------------------------------------*/
-.block13-outer {}
+
 
 .block13-inner {
   text-align: center;
@@ -1119,7 +1118,7 @@ h3.block-header-discr {
   text-align: start;
 }
 
-.block15-item {}
+
 
 .block15-footer {
   margin-top: 20px;
@@ -1203,7 +1202,7 @@ h3.block-header-discr {
   margin-bottom: 50px;
 }
 
-.block17-items {}
+
 
 .block17-item {
   margin-left: 20px;
@@ -1300,9 +1299,7 @@ h3.block-header-discr {
   font-weight: bold;
 }
 
-.contacts-adress {}
 
-.contacts-mail {}
 
 .contacts-button {
   margin-top: 20px;
