@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #DCDCDC;
+}
+
+.open-button {
+  width: 250px;
+  color: #888;
+  background: #FFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  top: 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.open-button:hover {
+  top: 45px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.popup {
+  min-width: 500px;
+  background-color: #c7d6de;
+  border-radius: 5%;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px;
+}
+
+.popup h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 140%;
+}
+
+.popup p {
+  line-height: 1.5;
+  font-size: 90%;
+}
+
+
+.close-popup {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+.close-popup-l {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
+
+#open-popup:target {
+  visibility: visible;
+  opacity: 1;
+}

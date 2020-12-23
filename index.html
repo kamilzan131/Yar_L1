@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Окна в квартиру и частный дом. Остекление балконов и лоджий. Гарантия на стеклопакеты 12 лет." />
+  <link rel="stylesheet" href="slider_style.css">
+  <link rel="stylesheet" href="slider_style mobile.css">
+  <link rel="stylesheet" href="popup-style.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="slider-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,8 +26,11 @@
           </div>
           <span class="header-element adress">Пр. Победы 100</span>
           <a  class="header-element phone" href="tel:8 927 249-19-31">8 927 249-19-31</a>
-          <button class="header-element button header-button " type="submit">Заказать звонок</button>
-          
+          <div class="header-element button header-button">
+            <a class="button__link" href="#open-popup">Заказать звонок</a>
+          </div>
+
+          <!-- <button class="header-element button header-button " type="submit">Заказать звонок</button> -->
 
         </div>
       </div>
@@ -108,36 +113,41 @@
       </div>
     </section>
 
-      <section id="slider_bl" class="outer-block">
-        <div class="inner-block wrapper">
-          <input checked type=radio name="slider" id="slide1" />
-          <input type=radio name="slider" id="slide2" />
-          <input type=radio name="slider" id="slide3" />
-          <div class="slider-wrapper">
-            <div class=inner>
-              <article>
-                <img  src="Images/okno-1-1-2.jpg" />
-              </article>
-              <article>
-                <img src="Images/okno-1-2-2.jpg" />
-              </article>
-              <article>
-                <img src="Images/okno-1-3-2.jpg" />
-              </article>
-            </div>
-          </div>
-          <div class="slider-prev-next-control">
-            <label for=slide1></label>
-            <label for=slide2></label>
-            <label for=slide3></label>
-          </div>
-          <div class="slider-dot-control">
-            <label for=slide1></label>
-            <label for=slide2></label>
-            <label for=slide3></label>
+    <section id="slider_bl" class="slider-l outer-block">
+      <div class="inner-block wrapper">
+        <input checked type=radio name="slider1" id="block2-slider1-1" />
+        <input type=radio name="slider1" id="block2-slider1-2" />
+        <input type=radio name="slider1" id="block2-slider1-3" />
+        <div class="slider-wrapper">
+          <div class=inner>
+            <article>
+              <img  src="Images/okno-1-1-2.jpg" />
+            </article>
+            <article>
+              <img src="Images/okno-1-2-2.jpg" />
+            </article>
+            <article>
+              <img src="Images/okno-1-3-2.jpg" />
+            </article>
           </div>
         </div>
-      </section>
+        <div class="slider-prev-next-control">
+          <label for=block2-slider1-1></label>
+          <label for=block2-slider1-2></label>
+          <label for=block2-slider1-3></label>
+        </div>
+        <div class="slider-dot-control">
+          <label for=block2-slider1-1></label>
+          <label for=block2-slider1-2></label>
+          <label for=block2-slider1-3></label>
+        </div>
+        <div class="block2__button">
+          <button class="button button-1" type="submit">Узнать цену</button>
+        </div>
+      </div>
+
+    </section>
+
     <section   class="outer-block block3-outer">
       <div class="inner-block block3-inner">
         <img src="Images/reb.png" alt="child">
@@ -295,22 +305,130 @@
         </div>
         <div class="block7-inner">
           <div class="block7-inner-item">
-            <h2>ПЛАСТИКОВЫЕ <br>
-              ОКНА</h2>
-            <img src="Images/photo2017-08-1415-03-52_e1i0GXf.jpg" alt="пластиковые окна">
-            <button class="button button-1" type="submit">Узнать цену</button>
+            <div class="block7-item__header">
+              <h2>ПЛАСТИКОВЫЕ ОКНА</h2>
+            </div>
+            <section id="slider_s1" class="slider-l">
+              <div class="inner-block wrapper wrapper-small">
+                <input checked type=radio name="slider2" id="block7-slider1-1" />
+                <input type=radio name="slider2" id="block7-slider1-2" />
+                <input type=radio name="slider2" id="block7-slider1-3" />
+                <input type=radio name="slider2" id="block7-slider1-4" />
+                <div class="slider-wrapper">
+                  <div class=inner>
+                    <article>
+                      <img src="Images/photo2017-08-1415-03-52_e1i0GXf.jpg" alt="пластиковые окна" />
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-07-2417-23-51.jpg"  alt="пластиковые окна"/>
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-07-2417-24-48.jpg"  alt="пластиковые окна"/>
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-08-1415-04-09_yiwcpF1.jpg"  alt="пластиковые окна"/>
+                    </article>
+                  </div>
+                </div>
+                <div class="slider-prev-next-control">
+                  <label for=block7-slider1-1></label>
+                  <label for=block7-slider1-2></label>
+                  <label for=block7-slider1-3></label>
+                  <label for=block7-slider1-4></label>
+                </div>
+                <div class="slider-dot-control">
+                  <label for=block7-slider1-1></label>
+                  <label for=block7-slider1-2></label>
+                  <label for=block7-slider1-3></label>
+                  <label for=block7-slider1-4></label>
+                </div>
+              </div>
+            </section>     
+            <div class="block7-item__button">
+              <button class="button button-1" type="submit">Узнать цену</button>
+            </div>
           </div>
           <div class="block7-inner-item">
-            <h2>НЕСТАНДАРТНЫЕ ОКНА
-              В КОТТЕДЖ</h2>
-            <img src="Images/1_BPaTXk9.jpg" alt="НЕСТАНДАРТНЫЕ ОКНА
-            В КОТТЕДЖ">
-            <button class="button button-1" type="submit">Узнать цену</button>
+            <div class="block7-item__header">
+              <h2>НЕСТАНДАРТНЫЕ ОКНА В КОТТЕДЖ</h2>
+            </div>
+            <section id="slider_s1" class="slider-l">
+              <div class="inner-block wrapper wrapper-small">
+                <input checked type=radio name="slider3" id="block7-slider2-1" />
+                <input type=radio name="slider3" id="block7-slider2-2" />
+                <input type=radio name="slider3" id="block7-slider2-3" />
+                <div class="slider-wrapper">
+                  <div class=inner>
+                    <article>
+                      <img src="Images/1_BPaTXk9.jpg" alt="НЕСТАНДАРТНЫЕ ОКНА В КОТТЕДЖ" />
+                    </article>
+                    <article>
+                      <img src="Images/2_s5l3Ezi.jpg" alt="НЕСТАНДАРТНЫЕ ОКНА В КОТТЕДЖ" />
+                    </article>
+                    <article>
+                      <img src="Images/3_W00iUlk.jpg" alt="НЕСТАНДАРТНЫЕ ОКНА В КОТТЕДЖ"/>
+                    </article>
+                  </div>
+                </div>
+                <div class="slider-prev-next-control">
+                  <label for=block7-slider2-1></label>
+                  <label for=block7-slider2-2></label>
+                  <label for=block7-slider2-3></label>
+                </div>
+                <div class="slider-dot-control">
+                  <label for=block7-slider2-1></label>
+                  <label for=block7-slider2-2></label>
+                  <label for=block7-slider2-3></label>
+                </div>
+              </div>
+            </section>    
+            <div class="block7-item__button">
+              <button class="button button-1" type="submit">Узнать цену</button>
+            </div>
           </div>
           <div class="block7-inner-item">
-            <h2>ОБШИВКА БАЛКОНОВ</h2>
-            <img src="Images/photo2017-07-2417-24-17.jpg" alt="">
-            <button class="button button-1" type="submit">Узнать цену</button>
+            <div class="block7-item__header">
+              <h2>ОБШИВКА БАЛКОНОВ</h2>
+            </div>
+            <section id="slider_s1" class="slider-l">
+              <div class="inner-block wrapper wrapper-small">
+                <input checked type=radio name="slider4" id="block7-slider3-1" />
+                <input type=radio name="slider4" id="block7-slider3-2" />
+                <input type=radio name="slider4" id="block7-slider3-3" />
+                <input type=radio name="slider4" id="block7-slider3-4" />
+                <div class="slider-wrapper">
+                  <div class=inner>
+                    <article>
+                      <img src="Images/photo2017-07-2417-24-17.jpg" alt="обшивка балконов_1" />
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-07-2417-24-24.jpg"  alt="обшивка балконов_2"/>
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-07-2417-24-07.jpg"  alt="обшивка балконов_3"/>
+                    </article>
+                    <article>
+                      <img src="Images/photo2017-07-2417-23-57.jpg"  alt="обшивка балконов_4"/>
+                    </article>
+                  </div>
+                </div>
+                <div class="slider-prev-next-control">
+                  <label for=block7-slider3-1></label>
+                  <label for=block7-slider3-2></label>
+                  <label for=block7-slider3-3></label>
+                  <label for=block7-slider3-4></label>
+                </div>
+                <div class="slider-dot-control">
+                  <label for=block7-slider3-1></label>
+                  <label for=block7-slider3-2></label>
+                  <label for=block7-slider3-3></label>
+                  <label for=block7-slider3-4></label>
+                </div>
+              </div>
+            </section>     
+            <div class="block7-item__button">
+              <button class="button button-1" type="submit">Узнать цену</button>
+            </div>
           </div>
         </div>
       </div>
@@ -650,6 +768,28 @@
         <button class="contacts-style button contacts-button " type="submit">Заказать звонок</button>
     </div> 
   </footer>
+
+<!--popup-->
+  <div id="open-popup" class="overlay">
+    <div class="popup">
+      <form class="form-1" action="" method="post">
+        <div class="order-form-header">
+          <p>Только сегодня 10 декабря</p>
+          
+        </div>
+        <input type="text" id="fname" name="fname"> <br>
+        
+        <div class="order-form-btn">
+          <button class="button" type="submit">Вызвать замерщика и получить скидку</button>
+        </div>
+       
+      </form>
+      <a class="close-popup" href="#">x</a>
+      <a class="close-popup-l" href="#"></a>
+      
+      </div>
+    </div>
+        
 </body>
 
 </html>

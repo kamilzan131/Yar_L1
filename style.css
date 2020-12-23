@@ -107,6 +107,7 @@ h3.block-header-discr {
 /* different buttons CSS*/
 
 .button {
+  display: inline-block;
   color: white;
   text-align: center;
   background-color: red;
@@ -116,11 +117,14 @@ h3.block-header-discr {
   padding-right: 8px;
   padding-top: 0;
   padding-bottom: 0;
-  height: 40px;
+  min-height: 40px;
   border: none;
   min-width: 100px;
   margin: 0;
+  text-decoration: none;
 }
+
+
 
 .button-1 {
   background-color: #00aeef;
@@ -158,8 +162,19 @@ h3.block-header-discr {
 
 .header-button {
   width: 204px;
-  border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0)
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.507)
+}
+
+.button__link {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  line-height: 40px;
 }
 
 /* header block CSS*/
@@ -420,8 +435,6 @@ h3.block-header-discr {
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
-  outline: 2px dashed rgb(180, 5, 78);
-  border: 2px dashed gray;
 }
 
 /*block-1-----------------------------------------------*/
@@ -494,6 +507,12 @@ h3.block-header-discr {
 
 .block2-inner img {
   width: 100%;
+}
+
+.block2__button {
+  position: absolute;
+  right: 17%;
+  bottom: 14%;
 }
 
 
@@ -644,7 +663,8 @@ h3.block-header-discr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 390px;
+  width: 40%;
+  min-width: 240px;
   height: 39px;
   font-size: 16px;
   margin-bottom: 15px;
@@ -762,10 +782,21 @@ h3.block-header-discr {
 }
 
 .block7-inner-item {
-  width: 320px;
-  height: 400px;
+  width: 50%;
   text-align: center;
-  padding: 0 40px 60px;
+  margin: 1em auto;
+}
+
+.block7-item__header {
+  width: 60%;
+  height: 80px;
+  margin: 1em auto;
+
+}
+
+.block7-item__button {
+  width: 100%;
+  margin: 10px 0;
 }
 
 .block7-inner img {
@@ -788,7 +819,10 @@ h3.block-header-discr {
 /*block8-----------------------------------------------------*/
 
 
-
+.block8-header {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -1066,6 +1100,14 @@ h3.block-header-discr {
   width: 100%;
   max-width: 475px;
   margin: 10px;
+}
+
+@media (max-width: 1000px) {
+
+  .block13-inner .gallery-2 {
+
+    margin: 10px auto;
+  }
 }
 
 /*block14-----------------------------------------------------*/
