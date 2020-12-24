@@ -120,7 +120,6 @@ h3.block-header-discr {
   min-height: 40px;
   border: none;
   min-width: 100px;
-  margin: 0;
   text-decoration: none;
 }
 
@@ -435,6 +434,7 @@ h3.block-header-discr {
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
+
 }
 
 /*block-1-----------------------------------------------*/

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Окна в квартиру и частный дом. Остекление балконов и лоджий. Гарантия на стеклопакеты 12 лет." />
+  <link rel="stylesheet" href="popup-style.css">
   <link rel="stylesheet" href="slider_style.css">
   <link rel="stylesheet" href="slider_style mobile.css">
-  <link rel="stylesheet" href="popup-style.css">
   <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="order-form">
-            <form class="form-1" action="" method="post">
+            <form class="form-1" action="sand.php" method="post">
               <div class="order-form-header">
                 <p>Только сегодня 10 декабря</p>
                 <p>скидка 56%</p>
@@ -73,10 +73,10 @@
               </div>
               <div class="order-form-inputs">
                 <div class="order-form-input">
-                  <input type="text" id="fname" name="fname"> <br>
+                  <input type="text" name="fio" placeholder="Ваше Имя" required>
                 </div>
                 <div class="order-form-input">
-                  <input type="text" id="lname" name="lname">
+                  <input type="date"  name="date">
                 </div>
                 <div class="order-form-inputs-checkbox">
                   <input type="checkbox" name="robot" id="">
@@ -108,7 +108,9 @@
             вашу проблему.</span>
         </div>
         <div class="block1-button">
-          <button class="button button-3" type="submit">СПРОСИТЬ СПЕЦИАЛИСТА</button>
+          <div class="button button-3">
+            <a class="button__link" href="#call-specialist">СПРОСИТЬ СПЕЦИАЛИСТА</a>
+          </div>
         </div>
       </div>
     </section>
@@ -142,7 +144,9 @@
           <label for=block2-slider1-3></label>
         </div>
         <div class="block2__button">
-          <button class="button button-1" type="submit">Узнать цену</button>
+          <div class="button button-1">
+            <a class="button__link" href="#find-out-the-price">Узнать цену</a>
+          </div>
         </div>
       </div>
 
@@ -175,7 +179,9 @@
             <div class="block4-item-description">
               <p>Купи 2 окна под ключ и получи жалюзи или натяжной потолок до 8 м2 в подарок.</p>
             </div>
-            <button class="button button-2" type="submit">Выбрать</button>
+            <div class="button button-2">
+              <a class="button__link" href="#choose-stock">Выбрать</a>
+            </div>
           </div>
           <div class="block4-inner-item">
             <img class="block4-img" src="Images/ikon3_THsJvkm.png" alt="Потолок бесплатно">
@@ -183,8 +189,9 @@
             <div class="block4-item-description">
               <p>Дарим 500 рублей вам за хороший совет и скидку вашему другу.</p>
             </div>
-            
-            <button class="button button-2" type="submit">Выбрать</button>
+            <div class="button button-2">
+              <a class="button__link" href="#choose-stock">Выбрать</a>
+            </div>
           </div>
           <div class="block4-inner-item">
             <img class="block4-img" src="Images/ikon3_THsJvkm.png" alt="Потолок бесплатно">
@@ -192,8 +199,9 @@
             <div class="block4-item-description">
               <p>Специальные условия для загородных и дачных домов.</p>
             </div>
-            
-            <button class="button button-2" type="submit">Выбрать</button>
+            <div class="button button-2">
+              <a class="button__link" href="#choose-stock">Выбрать</a>
+            </div>
           </div>
           <div class="block4-inner-item">
             <img class="block4-img" src="Images/ikon3_THsJvkm.png" alt="Потолок бесплатно">
@@ -201,8 +209,9 @@
             <div class="block4-item-description">
               <p>Скидка 5% при заключении договора в день замера.</p>
             </div>
-
-            <button class="button button-2" type="submit">Выбрать</button>
+            <div class="button button-2">
+              <a class="button__link" href="#choose-stock">Выбрать</a>
+            </div>
           </div>
 
         </div>
@@ -293,7 +302,9 @@
             <p class="text-3">Помогу подобрать лучшее решение и тут же рассчитаю его стоимость.</p>
           </div>
           <div class="consulatant-button">
-            <button class="button header-button" type="submit">Оставить заявку</button>
+            <div class="button header-button">
+              <a class="button__link" href="#window-appl">Оставить заявку</a>
+            </div>
           </div>
         </div>
       </div>
@@ -345,7 +356,9 @@
               </div>
             </section>     
             <div class="block7-item__button">
-              <button class="button button-1" type="submit">Узнать цену</button>
+              <div class="button button-1" >
+                <a class="button__link" href="#find-out-the-price">Узнать цену</a>
+              </div>
             </div>
           </div>
           <div class="block7-inner-item">
@@ -383,7 +396,9 @@
               </div>
             </section>    
             <div class="block7-item__button">
-              <button class="button button-1" type="submit">Узнать цену</button>
+              <div class="button button-1" >
+                <a class="button__link" href="#find-out-the-price">Узнать цену</a>
+              </div>
             </div>
           </div>
           <div class="block7-inner-item">
@@ -427,7 +442,9 @@
               </div>
             </section>     
             <div class="block7-item__button">
-              <button class="button button-1" type="submit">Узнать цену</button>
+              <div class="button button-1" >
+                <a class="button__link" href="#find-out-the-price">Узнать цену</a>
+              </div>
             </div>
           </div>
         </div>
@@ -650,7 +667,9 @@
             </ul>
           </div>
           <div class="block15-footer">
-            <button class="button button-1" type="submit">Узнать стоимость</button>
+            <div class="button button-1" >
+              <a class="button__link" href="#glasing-appl">Узнать цену</a>
+            </div>
           </div>
         </div>
 
@@ -739,8 +758,10 @@
             могут добросовестные рекомендации и чутье.
             </p>
           </div>
-          <div class="block17-btn">
-            <button class="button button-block17" type="submit">Заказать консультацию</button>
+          <div class="block17-btn">           
+            <div class="button button-block17" >
+              <a class="button__link" href="#cunsult-appl">Заказать консультацию</a>
+            </div>
           </div>
         </div>
       </div>
@@ -765,31 +786,174 @@
         <a  class="contacts-style contacts-phone" href="tel:8 927 249-19-31">8 927 249-19-31</a>
         <p class="contacts-style contacts-adress">Казань, Пр-т Победы 100.</p>
         <a  class="contacts-style contacts-mail" href="post:oknanaveka2006@mail.ru">oknanaveka2006@mail.ru</a>
-        <button class="contacts-style button contacts-button " type="submit">Заказать звонок</button>
+        <div class="contacts-style button contacts-button" >
+          <a class="button__link" href="#call-order">Заказать звонок</a>
+        </div>
     </div> 
   </footer>
 
 <!--popup-->
   <div id="open-popup" class="overlay">
-    <div class="popup">
-      <form class="form-1" action="" method="post">
-        <div class="order-form-header">
-          <p>Только сегодня 10 декабря</p>
-          
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Оставьте номер телефона, чтобы мы позвонили вам</h3>     
         </div>
-        <input type="text" id="fname" name="fname"> <br>
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Телефон*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
         
-        <div class="order-form-btn">
-          <button class="button" type="submit">Вызвать замерщика и получить скидку</button>
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">ПОЗВОНИТЕ МНЕ</button>
         </div>
-       
-      </form>
-      <a class="close-popup" href="#">x</a>
-      <a class="close-popup-l" href="#"></a>
-      
-      </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
     </div>
+  </div>
+ 
+ 
+  <div id="call-specialist" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Оставьте свой номер и наш специалист свяжется с вами</h3>     
+        </div>
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
         
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">СПРОСИТЬ СПЕЦИАЛИСТА</button>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
+
+  <div id="find-out-the-price" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Узнайте, сколько стоит окно со скидкой 56%</h3>     
+        </div>
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">Узнать цену</button>
+        </div>
+
+        <span class="form-popup__discr">Сотрудник компании рассчитает стоимость и позвонит вам</span>
+        <div class="form-popup__license">
+          <input  type="checkbox" id="fname" name="fname">
+          <span>Я согласен на обработку своих персональных данных</span>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
+  <div id="choose-stock" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Отправьте заявку для участия в акции</h3>     
+        </div>
+        <input  class="form-popup__input" type="text" id="fname" name="fname" placeholder="Имя(необязательно)" >
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">Отправить</button>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
+  <div id="window-appl" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Отправьте заявку для расчёта стоимости окон</h3>     
+        </div>
+        <input  class="form-popup__input" type="text" id="fname" name="fname" placeholder="Имя(необязательно)" >
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">Отправить</button>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
+  <div id="glasing-appl" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Отправьте заявку для расчёта стоимости остекления</h3>     
+        </div>
+        <input  class="form-popup__input" type="text" id="fname" name="fname" placeholder="Имя(необязательно)" >
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">Отправить</button>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
+  <div id="cunsult-appl" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Отправьте заявку на получение консультации</h3>     
+        </div>
+        <input  class="form-popup__input" type="text" id="fname" name="fname" placeholder="Имя(необязательно)" >
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">ПОЗВОНИТЕ МНЕ</button>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+       
+  
+  <div id="call-order" class="overlay">
+    <div class="">
+      <form class="form-popup" action="" method="post">
+        <div class="form-popup__header">
+          <h3 class="form-popup__header-text">Оставьте номер телефона, чтобы мы позвонили вам</h3>     
+        </div>
+        <input  class="form-popup__input" type="tel" id="fname" name="fname" placeholder="Введите номер телефона*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required>
+        
+        <div class="form-popup__button">
+          <button class="button button-popup" type="submit">ПОЗВОНИТЕ МНЕ</button>
+        </div>
+        <div class="form-popup__license">
+          <input  type="checkbox" id="fname" name="fname">
+          <span>Я согласен на обработку своих персональных данных</span>
+        </div>
+        <a class="close-popup" href="#">x</a>
+      </form>     
+      <a class="close-popup-l" href="#"></a>     
+    </div>
+  </div>
+
 </body>
 
 </html>

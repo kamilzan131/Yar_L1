@@ -38,25 +38,62 @@ body {
   transition: opacity .8s;
 }
 
-.popup {
-  min-width: 500px;
+
+.form-popup {
+  min-width: 300px;
+  width: 25%;
   background-color: #c7d6de;
-  border-radius: 5%;
+  border-radius: 10px;
   color: #333;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 30px;
 }
 
-.popup h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 140%;
+.form-popup__header {
+  width: 80%;
+  margin: 20px auto 20px auto;
 }
+
+.form-popup__header-text {
+  color: #2c2c2c;
+  font-size: 28px;
+
+}
+
+.form-popup__input {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-popup__button {
+  width: 80%;
+  margin: 20px auto;
+
+}
+
+.form-popup .button-popup {
+  padding: 0 10px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 22px;
+  color: #fff;
+  background-color: #0575a4;
+  border-color: #ccc;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 6px;
+}
+
+.form-popup__license {
+  margin: 10px auto;
+}
+
 
 .popup p {
   line-height: 1.5;
@@ -84,7 +121,14 @@ body {
 
 }
 
-#open-popup:target {
+#open-popup:target,
+#call-specialist:target,
+#find-out-the-price:target,
+#choose-stock:target,
+#window-appl:target,
+#glasing-appl:target,
+#cunsult-appl:target,
+#call-order:target {
   visibility: visible;
   opacity: 1;
 }
