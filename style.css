@@ -357,7 +357,24 @@ h3.block-header-discr {
 }
 
 .order-form-input {
+  display: block;
   margin-top: 5%;
+}
+
+.order-form-input__name {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  min-width: 210px;
+  font-size: 16px;
+}
+
+.order-form-input__date {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  min-width: 210px;
+  font-size: 16px;
 }
 
 .order-form-inputs-checkbox {

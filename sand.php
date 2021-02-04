@@ -20,9 +20,9 @@ $date = trim($date);
 //Удаление пробелов с конца и начала формы
 
 
-mail("yararkzn@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". Date: ".$date ,"From: a.kamilzan@gmail.com \r\n");
+mail("yararkzn@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". Date: ".$date ,"From:yararkzn@yandex.ru \r\n");
 
-if (mail("yararkzn@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". Date: ".$date ,"From: a.kamilzan@gmail.com \r\n"))
+if (mail("yararkzn@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". Date: ".$date ,"From: yararkzn@yandex.ru \r\n"))
  {
     header('location: thank-you.html');
 } else {
