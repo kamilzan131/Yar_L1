@@ -121,6 +121,16 @@ body {
 
 }
 
+
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 #open-popup:target,
 #call-specialist:target,
 #find-out-the-price:target,
